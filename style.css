@@ -72,10 +72,11 @@ input{
     background-image: url(imagens/fundo.png);
     background-size: cover;
     align-items: end;
+    overflow: hidden;
 }
 #telapeq{
     display: grid;
-    width: 80vw;
+    width: 10vw;
     height: 80%;
     align-items: end;
 
@@ -89,6 +90,16 @@ input{
     animation: elson 2s backwards;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+#bot{
+    width: 10vw;
+    height: 10vw;
+    background-image: url(imagens/viton.jpeg);
+    background-size: cover;
+    transform: translate(900%, -300%);
+    animation: vitor 3s backwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 @keyframes elson {
     0%{
@@ -106,6 +117,14 @@ input{
     100%{
         background-image: url(imagens/elson-1.jpeg);
         background-position: top center;
+    }
+}
+@keyframes vitor{
+    from{
+        transform: translate(900%, -300%);
+    }
+    to{
+        transform: translate(-100%, -300%);
     }
 }
 @media screen and (min-width: 768px){

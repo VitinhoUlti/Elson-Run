@@ -18,7 +18,7 @@ function jog(){
 }
 function pulo(){
     tela.style.alignItems = "start"
-    setTimeout(volte, 2000)
+    setTimeout(volte, 1000)
 }
 function volte(){
     tela.style.alignItems = "end"
