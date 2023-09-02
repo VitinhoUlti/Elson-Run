@@ -67,6 +67,29 @@ input{
     background-color: green;
     color: white;
 }
+#jogo{
+    display: none;
+    background-image: url(imagens/fundo.png);
+    background-size: cover;
+    align-items: end;
+}
+#telapeq{
+    display: grid;
+    width: 80vw;
+    height: 80%;
+    align-items: end;
+
+}
+#jogador{
+    width: 10vw;
+    height: 20vh;
+    background-image: url(imagens/elson-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation: elson 2s backwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 @keyframes elson {
     0%{
         background-image: url(imagens/elson-1.jpeg);
@@ -88,5 +111,8 @@ input{
 @media screen and (min-width: 768px){
     header{
         font-size: 2vw;
+    }
+    #jogo{
+        background-position: bottom;
     }
 }
