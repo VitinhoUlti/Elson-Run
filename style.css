@@ -1,1 +1,92 @@
 @charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+}
+#tela{
+    display: grid;
+    width: 80vw;
+    height: 80vh;
+    background-color: blue;
+}
+#inicio{
+    display: grid;
+    grid-template-rows: 10% 50% 40%;
+}
+header{
+    color: white;
+    text-align: center;
+    font-size: 4vw;
+}
+#fundo{
+    background-color: aqua;
+    display: grid;
+    grid-template-areas: 
+    "imagem vitor"
+    ;
+    justify-content: space-around;
+    align-items: center;
+}
+#imagem{
+    width: 10vw;
+    height: 10vh;
+    grid-area: imagem;
+    background-image: url(imagens/elson-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    animation: elson 2s backwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#vitor{
+    width: 10vw;
+    height: 10vh;
+    grid-area: vitor;
+    background-image: url(imagens/viton.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+#botao{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 30vw;
+    height: 10vh;
+    background-color: green;
+    color: white;
+}
+@keyframes elson {
+    0%{
+        background-image: url(imagens/elson-1.jpeg);
+        background-position: top center;
+    }
+    50%{
+        background-image: url(imagens/elson-2.jpeg);
+        background-position: center;
+    }
+    75%{
+        background-image: url(imagens/elson-3.jpeg);
+        background-position: center;
+    }
+    100%{
+        background-image: url(imagens/elson-1.jpeg);
+        background-position: top center;
+    }
+}
+@media screen and (min-width: 768px){
+    header{
+        font-size: 2vw;
+    }
+}
