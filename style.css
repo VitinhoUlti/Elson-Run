@@ -92,8 +92,8 @@ input{
     animation-iteration-count: infinite;
 }
 #bot{
-    width: 10vw;
-    height: 10vw;
+    width: 60px;
+    height: 60px;
     background-image: url(imagens/viton.jpeg);
     background-size: cover;
     transform: translate(900%, -300%);
@@ -133,5 +133,57 @@ input{
     }
     #jogo{
         background-position: bottom;
+    }
+}
+@media screen and (min-width: 1024px){
+    @keyframes vitor{
+        from{
+            transform: translate(1500%, -300%);
+        }
+        to{
+            transform: translate(-100%, -300%);
+        }
+    }
+}
+@media screen and (min-width: 1200px){
+    @keyframes vitor{
+        from{
+            transform: translate(2500%, -250%);
+        }
+        to{
+            transform: translate(-100%, -250%);
+        }
+    }
+    #bot{
+        width: 90px;
+        height: 90px;
+    }
+}
+@media screen and (min-height:600px){
+    @keyframes vitor{
+        from{
+            transform: translate(2500%, -250%);
+        }
+        to{
+            transform: translate(-100%, -250%);
+        }
+    }
+    #bot{
+        width: 90px;
+        height: 90px;
+    }
+}
+@media screen and (min-width:2500px){
+    @keyframes vitor{
+        from{
+            transform: translate(2500%, -250%);
+        }
+        to{
+            transform: translate(-100%, -250%);
+        }
+    }
+    #bot{
+        width: 150px;
+        height: 150px;
     }
 }
