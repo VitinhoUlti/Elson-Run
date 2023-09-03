@@ -50,7 +50,6 @@ function gameover(){
         jogo.style.display = 'none';
         pontosv = 1
         pontosf.textContent = pontosv;
-        clearInterval(intervalo)
     }
 }
-let intervalo = setInterval(gameover, 500)
+setInterval(gameover, 500)
