@@ -46,7 +46,7 @@ function volte(){
 }
 function gameover(){
     if(vi == 3 && tela.style.alignItems == "end"){
-        inicio.style.display = 'grid';
+        inicio.style.display = 'none';
         jogo.style.display = 'none';
         pontosv = 1
         pontosf.textContent = pontosv;
