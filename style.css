@@ -12,6 +12,7 @@ html, body{
     background-color: pink;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 #tela{
     display: grid;
@@ -134,6 +135,14 @@ input{
     #jogo{
         background-position: bottom;
     }
+    @keyframes vitor{
+        from{
+            transform: translate(1500%, -300%);
+        }
+        to{
+            transform: translate(-100%, -300%);
+        }
+    }
 }
 @media screen and (min-width: 1024px){
     @keyframes vitor{
@@ -145,24 +154,24 @@ input{
         }
     }
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1440px){
     @keyframes vitor{
         from{
-            transform: translate(2500%, -250%);
+            transform: translate(2500%, -200%);
         }
         to{
-            transform: translate(-100%, -250%);
+            transform: translate(-100%, -200%);
         }
     }
     #bot{
-        width: 90px;
-        height: 90px;
+        width: 80px;
+        height: 80px;
     }
 }
 @media screen and (min-height:600px){
     @keyframes vitor{
         from{
-            transform: translate(2500%, -250%);
+            transform: translate(1500%, -250%);
         }
         to{
             transform: translate(-100%, -250%);
@@ -171,6 +180,48 @@ input{
     #bot{
         width: 85px;
         height: 85px;
+    }
+}
+@media screen and (min-height:800px){
+    @keyframes vitor{
+        from{
+            transform: translate(900%, -250%);
+        }
+        to{
+            transform: translate(-100%, -250%);
+        }
+    }
+    #bot{
+        width: 100px;
+        height: 100px;
+    }
+}
+@media screen and (min-height:890px){
+    @keyframes vitor{
+        from{
+            transform: translate(900%, -250%);
+        }
+        to{
+            transform: translate(-100%, -250%);
+        }
+    }
+    #bot{
+        width: 130px;
+        height: 130px;
+    }
+}
+@media screen and (min-height:1700px){
+    @keyframes vitor{
+        from{
+            transform: translate(900%, -250%);
+        }
+        to{
+            transform: translate(-100%, -250%);
+        }
+    }
+    #bot{
+        width: 250px;
+        height: 250px;
     }
 }
 @media screen and (min-width:2500px){
