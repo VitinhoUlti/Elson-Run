@@ -94,11 +94,11 @@ input{
     opacity: 3;
 }
 #bot{
+    display: inline;
     width: 60px;
     height: 60px;
     background-image: url(imagens/viton.jpeg);
     background-size: cover;
-    transform: translate(900%, -300%);
     animation: vitor 3s backwards;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -171,10 +171,14 @@ input{
 }
 @media screen and (min-height:600px){
     @keyframes vitor{
-        from{
+        0%{
             transform: translate(1500%, -250%);
         }
-        to{
+        85%{
+            transform: translate(100%, -250%);
+            opacity: 3;
+        }
+        100%{
             transform: translate(-100%, -250%);
         }
     }

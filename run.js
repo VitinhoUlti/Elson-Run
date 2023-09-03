@@ -28,8 +28,14 @@ function jog(){
      pontosv++;
      pontosf.textContent = pontosv; 
     }
+    function ba(){
+        if(tela.style.alignItems == "end"){
+            vi = 3;
+        }
+    }
 }
 setInterval(pontos, 3*1000)
+setInterval(ba, 3000)
 }
 function pulo(){
     tela.style.alignItems = "start";
@@ -39,8 +45,12 @@ function volte(){
     tela.style.alignItems = "end";
 }
 function gameover(){
-    if(bot.style.display == 'none'){
-        window.alert("punheta")
+    if(vi == 3 && tela.style.alignItems == "end"){
+        inicio.style.display = 'grid';
+        jogo.style.display = 'none';
+        pontosv = 1
+        pontosf.textContent = pontosv;
+        clearInterval(intervalo)
     }
-    
 }
+let intervalo = setInterval(gameover, 500)
